@@ -25,6 +25,10 @@ Edit the unit file using systemctl (to change `min_ttl_ms` value):
 ```bash
 $ sudo systemctl edit mglru-thrashing-prevention.service --full
 ```
+You can check the currently applied value with:
+```bash
+cat /sys/kernel/mm/lru_gen/min_ttl_ms
+```
 
 ## Installation
 
