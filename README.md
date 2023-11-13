@@ -1,7 +1,7 @@
 
 # Enable or disable MGLRU thrashing prevention
 
-A simple shell script and a oneshot systemd service to change the value, enable or disable MGLRU thrashing prevention at boot time or on the fly.
+A simple shell script and a oneshot systemd service to edit, enable or disable MGLRU thrashing prevention at boot time or on the fly.
 
 ## Usage
 
