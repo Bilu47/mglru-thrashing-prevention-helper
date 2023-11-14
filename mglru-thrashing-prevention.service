@@ -1,7 +1,7 @@
 [Unit]
 Description=MGLRU thrashing prevention
 ConditionPathExists=/sys/kernel/mm/lru_gen/enabled
-Documentation=https://github.com/hakavlad/mg-lru-helper
+Documentation=https://github.com/Bilu47/mglru-thrashing-prevention-helper
 
 [Service]
 Type=oneshot
