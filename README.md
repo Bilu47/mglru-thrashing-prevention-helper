@@ -5,7 +5,7 @@ A simple shell script and a oneshot systemd service to modify, enable or disable
 
 ## Usage
 
-Run `mglru-thrashing-prevention_value M` [M = a number of your choice] in your terminal to modify it on the fly (manually).
+Run `mglru-thrashing-prevention_value M` [M = a number of your choice in milliseconds] in your terminal to modify it on the fly (manually).
 
 Example output for the value 2000:
 ```
@@ -19,7 +19,7 @@ Or enable/disable MGLRU thrashing prevention during system boot (automatically):
 ```bash
 $ sudo systemctl enable mglru-thrashing-prevention.service
 ```
-By default it sets `/sys/kernel/mm/lru_gen/min_ttl_ms` to 1000.
+By default it sets `/sys/kernel/mm/lru_gen/min_ttl_ms` to 1000 milliseconds.
 
 Edit the unit file using systemctl (to change `min_ttl_ms` value):
 ```bash
